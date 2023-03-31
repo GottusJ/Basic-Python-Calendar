@@ -1,87 +1,160 @@
-
-
           <!DOCTYPE html>
           <html lang="en">
           <head>
-            <link rel="stylesheet" href="style2.css">
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Document</title>
           </head>
-          <body>
-            <h1 class="title">Stundenplan</h1>
-        <table class="border">
-            <thead>
-                <tr class="tag">
-                  <th>Zeit</th>
-                  <th>Montag</th>
-                  <th>Dienstag</th>
-                  <th>Mittwoch</th>
-                  <th>Donnerstag</th>
-                  <th>Freitag</th>
-                </tr>
-            </thead>
 
-            <tbody> 
-                <tr>
-                  <td class="time">7.45-8.30</td>
-                    <td class="religion", rowspan="2">Ev.Religion</td>
-                    <td class="Geschichte", rowspan="2">Geschichte</td>
-                    <td class="Spanisch", rowspan="2">Spanisch</td>
-                    <td class="Musik", rowspan="2">Musik</td>
-                    <td class="Informatik", rowspan="2">Informatik</td>
-                </tr>
+          <title>Timetable</title>
+    <style type="text/css">
+    body
+    {
+        font-family: arial;
+    }
 
-                <tr>
-                  <td class="time">8.35-9.20</td>
-                </tr>
-                <tr>
-                  <td class="time">9.20-9.40</td>
-                  <th colspan="5">Pause</th>
-                <tr>
-               </tr>
-                  <td class="time">9.40-10.25</td>
-                  <td style="background-color:#800000;"rowspan="2">Politik</td>
-                        <td style="background-color:#e97100;"rowspan="1">Spanisch</td>
-                        <td style="background-color:#005e10;"rowspan="2">Kunst</td>
-                        <td style="background-color:#e97100;"rowspan="1">Spanisch</td>
-                        <td style="background-color:#1200b6;"rowspan="2">Mathe</td>
-            </tr>
-            <tr>
-                  <td class="time">10.30-11.15</td>
-                        <td style="background-color:#1200b6;"rowspan="1">Mathe</td>
-                        <td style="background-color:#47fff0;color:#000000;"rowspan="1">Chemie</td>
-            </tr>
-                      <td class="time">11.15-11.30</td>
-                  <th colspan="5">Pause</th>
-            </tr>
-                <tr>
-                  <td class="time">11.30-12.15</td>
-                  <td style="background-color:#2bff00; color:#000000;"rowspan="1">Deutsch</td>
-                        <td style="background-color:#dd006f; color:#000000;"rowspan="2">Sport</td>
-                        <td style="background-color:#f0ff20; color:#000000;"rowspan="1">Englisch</td>
-                        <td style="background-color:#f0ff20; color:#000000;"rowspan="1">Englisch</td>
-                        <td style="background-color:#2bff00; color:#000000;"rowspan="1">Deutsch</td>
-                      </tr>
-                      <tr>
-                            <td class="time">12.20-13.05</td>
-                            <td style="background-color:#1200b6;"rowspan="1">Mathe</td>
-                                  <td style="background-color:#000000;"rowspan="1">Informatik</td>
-                                  <td style="background-color:#2bff00; color:#000000;"rowspan="1">Deutsch</td>
-                                  <td style="background-color:#f0ff20; color:#000000;"rowspan="1">Englisch</td>
-                      </tr>
-                      <td class="time">13.05-13.15</td>
-                            <th colspan="5">Pause</th>
-                      </tr>
-                          <tr>
-                            <td class="time">13.15-14.00</td>
-                            <td></td>
-                                  <td style="background-color:#47fff0; color:#000000;"rowspan="1">Chemie</td>
-                                  <th colspan="3"></th>
-                            
-                        </tbody>
+    th,td
+    {
+        margin: 0;
+        text-align: center;
+        border-collapse: collapse;
+        outline: 1px solid #e3e3e3;
+    }
 
-        </table>      
-          </body>
-          </html>
+    td
+    {
+        padding: 5px 10px;
+    }
+
+    th
+    {
+        background: #666;
+        color: white;
+        padding: 5px 10px;
+    }
+
+    td:hover
+    {
+        cursor: pointer;
+        background: #666;
+        color: white;
+    }
+    .religion {
+        background-color: aqua;
+    }
+    </style>
+
+</head>
+<body>
+    <table width="80%" align="center" >
+    <div id="head_nav">
+        <tr>
+            <th>Zeit</th>
+            <th>Montag</th>
+            <th>Dienstag</th>
+            <th>Mittwoch</th>
+            <th>Donnerstag</th>
+            <th>Freitag</th>
+        </tr>
+    </div>  
+
+    <tr>
+        <th>7.45 - 8.30</th>
+            <td class="religion", rowspan="2">Religion</td>
+            <td class="Geschichte", rowspan="2">Geschichte</td>
+            <td class="Spanisch", rowspan="2">Spanisch</td>
+            <td class="Musik", rowspan="2">Musik</td>
+            <td class="Informatik", rowspan="2">Informatik</td>
+        </div>
+    </tr>
+
+    <tr>
+        <th>8.35-9.20</th>
+
+        </div>
+    </tr>
+
+    <tr>
+        <th>9.20-9.40</td>
+        
+            <td colspan="5">Pause</td>
+
+        </div>
+    </tr>
+
+    <tr>
+        <th>9.40 - 10.25</th>
+            
+            <td>Politik</td>
+            <td>Header</td>
+            <td>Header</td>
+            <td>Header</td>
+            <td>Header</td>
+
+        </div>
+    </tr>
+
+    <tr>
+        <th>10.30 - 11.15</th>
+        
+            <td>Header</td>
+            <td>Header</td>
+            <td>Header</td>
+            <td>Header</td>
+            <td>Header</td>
+
+        </div>
+    </tr>
+
+    <tr>
+        <th>10.30 - 11.15</th>
+        
+        <td colspan="5">Pause</td>
+
+        </div>
+    </tr>
+    <tr>
+        <th>10.30 - 11.15</th>
+        
+            <td>Header</td>
+            <td>Header</td>
+            <td>Header</td>
+            <td>Header</td>
+            <td>Header</td>
+
+        </div>
+    </tr>
+    <tr>
+        <th>10.30 - 11.15</th>
+        
+            <td>Header</td>
+            <td>Header</td>
+            <td>Header</td>
+            <td>Header</td>
+            <td>Header</td>
+
+        </div>
+    </tr>
+    <tr>
+        <th>10.30 - 11.15</th>
+        
+        <td colspan="5">Pause</td>
+
+        </div>
+    </tr>
+    <tr>
+        <th>10.30 - 11.15</th>
+        
+            <td>Header</td>
+            <td>Header</td>
+            <td>Header</td>
+            <td>Header</td>
+            <td>Header</td>
+
+        </div>
+    </tr>
+
+</table>
+</body>
+</html>
