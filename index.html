@@ -9,10 +9,28 @@
 
 	<title>Timetable</title>
 	<style type="text/css">
+
+        * {
+            transition: all 0.2s ease-in-out;
+        }
+
 		body
 		{
 		    font-family: arial;
+            display: grid;
+            place-items: center;
 		}
+
+        h1
+        {
+            color: black;
+            font-weight: 800;
+        }
+
+        table{
+            border: black solid 5px;
+            border-radius: 10px;
+        }
 
 		th,td
 		{
@@ -29,7 +47,7 @@
 
 		th
 		{
-		    background: #666;
+		    background: #2A5ADF;
 		    color: white;
 		    padding: 5px 10px;
 		}
@@ -37,15 +55,14 @@
 		td:hover
 		{
 		    cursor: pointer;
-		    background: #666;
+		    background: #1D49C3;
 		    color: white;
-		}
-		.religion {
-		    background-color: aqua;
+            border-radius: 5px;
 		}
 	</style>
 
 	<body>
+        <h1>Stundenplan</h1>
 		<table width="80%" align="center">
 			<div id="head_nav">
 				<tr>
@@ -59,80 +76,67 @@
 			</div>
 
 			<tr>
-				<th>7.45 - 8.30</th>
-				<td class="religion" , rowspan="2">Religion</td>
-				<td class="Geschichte" , rowspan="2">Geschichte</td>
-				<td class="Spanisch" , rowspan="2">Spanisch</td>
-				<td class="Musik" , rowspan="2">Musik</td>
-				<td class="Informatik" , rowspan="2">Informatik</td>
+				<th>8:00</th>
+                <td rowspan="2">Religion</td>
+				<td rowspan="2">Geschichte</td>
+				<td rowspan="2">Spanisch</td>
+				<td rowspan="2">Musik</td>
+				<td rowspan="2">Informatik</td>
 			</tr>
 
 			<tr>
-				<th>8.35-9.20</th>
+				<th>9:00</th>
 			</tr>
 
 			<tr>
-				<th>9.20-9.40</th>
+				<th>10:00</th>
 
-				<td colspan="5">Pause</td>
+                <td rowspan="2">Religion</td>
+				<td rowspan="2">Geschichte</td>
+				<td rowspan="2">Spanisch</td>
+				<td rowspan="2">Musik</td>
+				<td rowspan="2">Informatik</td>
+
 			</tr>
 
 			<tr>
-				<th>9.40 - 10.25</th>
+				<th>11:00</th>
 
-				<td>Politik</td>
-				<td>Header</td>
-				<td>Header</td>
-				<td>Header</td>
-				<td>Header</td>
 			</tr>
 
 			<tr>
-				<th>10.30 - 11.15</th>
+				<th>12:00</th>
+                
+                <td>Lunch</td>
+                <td>Lunch</td>
+                <td>Lunch</td>
+                <td>Lunch</td>
+                <td>Lunch</td>
 
-				<td>Header</td>
-				<td>Header</td>
-				<td>Header</td>
-				<td>Header</td>
-				<td>Header</td>
 			</tr>
 
 			<tr>
-				<th>10.30 - 11.15</th>
+				<th>1:00</th>
 
-				<td colspan="5">Pause</td>
+                <td rowspan="2">Religion</td>
+				<td rowspan="2">Geschichte</td>
+				<td rowspan="2">Spanisch</td>
+				<td rowspan="2">Musik</td>
+				<td rowspan="2">Informatik</td>
+
 			</tr>
 			<tr>
-				<th>10.30 - 11.15</th>
+				<th>2:00</th>
 
-				<td>Header</td>
-				<td>Header</td>
-				<td>Header</td>
-				<td>Header</td>
-				<td>Header</td>
 			</tr>
 			<tr>
-				<th>10.30 - 11.15</th>
+				<th>3:00</th>
+                <td rowspan="1">Study</td>
+                <td rowspan="1">Study</td>
+                <td rowspan="1">Study</td>
+                <td rowspan="1">Study</td>
+                <td rowspan="1">Study</td>
 
-				<td>Header</td>
-				<td>Header</td>
-				<td>Header</td>
-				<td>Header</td>
-				<td>Header</td>
-			</tr>
-			<tr>
-				<th>10.30 - 11.15</th>
-
-				<td colspan="5">Pause</td>
-			</tr>
-			<tr>
-				<th>10.30 - 11.15</th>
-
-				<td>Header</td>
-				<td>Header</td>
-				<td>Header</td>
-				<td>Header</td>
-				<td>Header</td>
 			</tr>
 		</table>
 	</body>
